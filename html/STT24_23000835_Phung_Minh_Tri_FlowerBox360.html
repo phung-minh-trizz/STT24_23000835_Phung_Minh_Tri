@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlowerBox 360</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: pink;
+            color: purple;
+            padding: 15px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .header p {
+            margin: 5px 0;
+        }
+        .nav {
+            background-color: hsl(325, 56%, 70%);
+            overflow: hidden;
+        }
+        .nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 10px 15px;
+            text-decoration: none;
+        }
+        .nav a:hover {
+            background-color: #d795da;
+        }
+        .container {
+            display: flex;
+            padding: 20px;
+        }
+        .left, .right {
+            width: 50%;
+            padding: 30px;
+        }
+        .left {
+            border-right: 5px solid #26d8a3;
+        }
+        .right img {
+            width: 105%;
+            max-width: 500px;
+            height: auto;
+        }
+        h2 {
+            color: #003366;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 15px;
+        }
+        form input[type="submit"], form input[type="reset"] {
+            width: auto;
+            background-color: #da5dba;
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            
+        }
+        form input[type="submit"]:hover, form input[type="reset"]:hover {
+            background-color: #d332c6;
+        }
+        footer {
+            background-color: #d46398;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>FlowerBox 360</h1>
+        <p>Những bông hoa luôn đẹp nhất khi nở trong chiếc chậu tốt nhất</p>
+    </div>
+    <div class="nav">
+        <a href="#">Home</a>
+        <a href="#">Promotion</a>
+        <a href="#">Gift Baskets</a>
+        <a href="#">Flower Services</a>
+        <a href="#">About</a>
+    </div>
+    <div class="container">
+        <div class="left">
+            <h2>Bạn cần gì hôm nay!</h2>
+            <p>
+                Hãy để lại thông tin của bạn, chúng tôi sẽ liên hệ lại ngay sau khi nhận được yêu cầu của bạn.
+            </p>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+<input type="text" name="telephone" placeholder="Telephone">
+                <input type="text" name="subject" placeholder="Subject">
+                <textarea name="message" placeholder="Message" rows="5"></textarea>
+                <input type="submit" value="Send">
+                <input type="reset" value="Reset">
+            </form>
+        </div>
+        <div class="right">
+            <img src="flower2.jpg" alt="FlowerBox 360">
+        </div>
+    </div>
+    <hr>
+    <footer>
+        <p>&copy; Công ty TNHH 1 thành viên Trí Minh. </p>
+    </footer>    
+</body>
+</html>
